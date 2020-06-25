@@ -1,29 +1,23 @@
 <template>
     <v-app>
-        <v-app-bar app color="blue-grey" dark>
-            <router-link to="/" tag="button">DiscordServerTracker</router-link>
-            <v-spacer/>
-            <router-link to="/about" tag="button">About</router-link>
-        </v-app-bar>
+        <Navbar/>
         <v-main>
             <v-container>
                 <router-view/>
             </v-container>
         </v-main>
-        <v-footer app color="blue-grey" class="white--text">
-            <span>DiscordServerTracker</span>
-            <v-spacer></v-spacer>
-            <span>&copy; 2020</span>
-        </v-footer>
+        <Footer/>
     </v-app>
 </template>
 
 <script>
 
+    import Footer from "@/components/layout/Footer";
+    import Navbar from "@/components/layout/Navbar";
     export default {
         name: 'App',
 
-        components: {},
+        components: {Navbar, Footer},
 
         data: () => ({
         }),

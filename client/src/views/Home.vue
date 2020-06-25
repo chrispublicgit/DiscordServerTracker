@@ -1,8 +1,7 @@
 <template>
-    <v-container>
+    <div>
         DiscordServerTracker
-    </v-container>
-
+    </div>
 </template>
 
 <script>
